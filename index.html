@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet/less" type="text/css" href="styles/index.less" />
+    <style>
+        @import url('https://fonts.allesdigital.io/css2?family=Poppins:wght@700;500&display=swap');
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <title>Macchina per l'Amicizia</title>
+</head>
+
+<body>
+    <div class="main container">
+        <div id="title">
+            <span>🤖</span>
+            <h1>Macchina per l'Amicizia</h1>
+            <span>🤖</span>
+        </div>
+        <h3></h3>
+        <div class="search container">
+            <label for="autocomplete">🔎 Cerca:</label>
+            <input type="text" id="autocomplete" name="autocomplete" aria-label="Cerca" aria-autocomplete="list"
+                placeholder="nome o mese">
+            <ul id="suggestions" role="listbox" aria-labelledby="autocomplete"></ul>
+        </div>
+        <div>
+            <div id="remaining-days"></div>
+        </div>
+    </div>
+    <!-- loading script at the end, so the elements are already loaded -->
+    <script src="scripts/autocomplete.js"></script>
+</body>
+
+</html>
